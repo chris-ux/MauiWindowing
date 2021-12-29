@@ -18,7 +18,7 @@ public class MainPageViewModel : ObservableObject
 
     private void ToggleFullScreenAction(object obj)
     {
-        IDesktopEnvironmentService windowHelperService = DependencyService.ServiceProvider.GetService<IDesktopEnvironmentService>();
+        var windowHelperService = DependencyService.ServiceProvider.GetService<IDesktopEnvironmentService>();
         if (windowHelperService != null)
             windowHelperService.IsFullScreen = !windowHelperService.IsFullScreen;
     }
