@@ -33,11 +33,6 @@ public class DesktopEnvironmentService : IDesktopEnvironmentService
         Debug.WriteLine("Handle Full Screen Not Implemented in MacCatalyst -- Chris needs mac device...");
     }
 
-    public void SetWindowProperties()
-    {
-        Debug.WriteLine("Chris needs mac device...");
-    }
-
     public void UpdateContext(IServiceProvider mauiContextServiceProvider)
     {
         this.mauiContextServiceProvider = mauiContextServiceProvider;
