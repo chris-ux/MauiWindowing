@@ -36,8 +36,8 @@ public static class DependencyService {
     /// <returns></returns>
     public static MauiAppBuilder ConfigureServices(this MauiAppBuilder builder)
     {
-        builder.Services.AddSingleton<MainPage>();
-        builder.Services.AddSingleton<MainPageViewModel>();
+        builder.Services.AddTransient<MainPage>();
+        builder.Services.AddTransient<MainPageViewModel>();
 
         return builder;
     }
