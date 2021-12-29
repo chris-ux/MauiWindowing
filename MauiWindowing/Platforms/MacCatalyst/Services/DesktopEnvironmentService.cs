@@ -4,7 +4,7 @@ using System.Diagnostics;
 using System.Linq;
 using UIKit;
 
-namespace MauiWindowing.Platforms.MacCatalyst.Services;
+namespace MauiWindowing.Platforms.Services;
 
 public class DesktopEnvironmentService : IDesktopEnvironmentService
 {
